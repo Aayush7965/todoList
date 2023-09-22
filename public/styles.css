@@ -1,0 +1,211 @@
+body {
+    background-color: #F4F9F4;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    color: #8AAE92;
+    font-size: 1.438rem;
+    margin-top: 0;
+}
+
+.topContainerParagraph {
+    color: #D8D9DA;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+h1 {
+    color: #616161;
+}
+
+.light-date {
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    flex-direction: column;
+}
+#footerHr {
+    margin-top: 3rem;
+}
+#footerData {
+    text-align: center;
+    color: #141E46;
+}
+td {
+    text-align: left;
+    width: 100%;
+}
+
+
+input#addButton {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #8AAE92;
+    border: none;
+    font-size: 1.269rem;
+}
+
+input#tasks {
+    height: 2.7rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #F0F0F0;
+    font-size: 1.063rem;
+}
+
+.topGridContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+.topPortion {
+    width: 40%;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 0 0;
+    
+    box-sizing: border-box;
+}
+.whiteBoard {
+    height: 30rem;
+    width: 40%;
+    background-color: white;
+    padding: 0 2rem;
+    border-radius: 0 0 1rem 1rem;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+.whiteBoard,.topPortion {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#addButton {
+    color: #FFFFFF;
+}
+
+.listItem {
+    padding: 1rem 0;
+    overflow-wrap: anywhere;
+    display: flex;
+    gap: 1rem;
+    border-top: 0.09rem solid #D8D9DA;
+    color: #141E46;
+    align-items: center;
+}
+
+hr {
+    height: 0.09rem;
+    background-color: #D8D9DA;
+    border: none;
+}
+
+#formID {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.strikethrough {
+    margin: 0;
+}
+
+input[type=checkbox]:checked + p.strikethrough {
+    text-decoration:line-through;
+    color: #D8D9DA;
+ }
+
+.header {
+    background-color: #C4E3CB;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.deleteIcon {
+    width: 20px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.fa-solid {
+    color: #D8D9DA;
+}
+.fa-solid:hover {
+    color: #ed3030;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+
+
+/* CSS */
+.button-46 {
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #DFDFDF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #616161;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.206rem;
+  justify-content: center;
+  padding: 14px 22px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-46:active,
+.button-46:hover {
+  outline: 0;
+}
+
+.button-46:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+label {
+    font-size: 1.063rem;
+}
+
+  

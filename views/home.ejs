@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+<form action="<%=page%>" method="post" id="formID">
+    <input type="text" name="task" id="tasks" placeholder="New Item" autocomplete="off" required>
+    <input type="submit" id="addButton" value="+">
+</form> 
+
+</div>
+
+<div class="whiteBoard">
+<% if (locals.tasks) { %>
+    <table>
+        <% locals.tasks.forEach((task) => { %>
+        <div class="listItem <%= task._id %>">
+            <% if (task.isChecked) { %>
+                <input type="checkbox" id="<%= task._id %>" class="myCheckbox" name="checkbox" checked>
+                <p class="strikethrough"> <%=task.description%></p>
+            <%} else { %>
+                <input type="checkbox" id="<%= task._id %>" class="myCheckbox" name="checkbox">
+                <p class="strikethrough"> <%=task.description%></p>
+            <% } %>
+                <div class="deleteIcon hidden" id="<%= task._id %>">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+        </div>
+        <% })  %>
+    </table>
+<% } %>
+</div>
+
+<script type="module" src="./script.js"></script>
+<%- include("partials/footer.ejs") %>
