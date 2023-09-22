@@ -10,6 +10,9 @@
   },
   "keywords": [],
   "author": "Aayush Pareek",
+  "engines": {
+    "node":  ">=14.20.1"
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
